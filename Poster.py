@@ -13,7 +13,7 @@ import os
 import sys
 
 
-installLocation = "/home/silverwulf-admin/PosterPi/"
+installLocation = "/home/pi/PosterPi/"
 
 #Constants
 s= Service('/usr/bin/chromedriver')
@@ -176,7 +176,7 @@ if poster != "":
         height = 600
         driver = webdriver.Chrome(options=options, service=s)
         driver.set_window_size(width, height)
-        driver.get('file:///home/silverwulf-admin/PosterPi/PlexPoster.html') #Installed Directory
+        driver.get('file:///home/pi/PosterPi/PlexPoster.html') #Installed Directory
         driver.save_screenshot(f"{installLocation}Poster.png")
         driver.quit()
         #Display Completed Image "Poster.png" and puts the "Now Showing" banner and a border on the Plex Poster

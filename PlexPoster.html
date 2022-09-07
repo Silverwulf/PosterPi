@@ -1,0 +1,43 @@
+
+
+<html>
+	<head>
+		<script javascript>
+			// Refreshes the page, and the cache, every minute from the body onload
+			function timedRefresh(timeoutPeriod) {
+				setTimeout("location.reload(true);",timeoutPeriod);
+			}
+</script>
+			<style>
+            html, body {
+                
+                margin: 0;
+                padding: 0;
+                height: 600px;
+                width: 448px;
+                background-color: black ;
+				color: white;   
+            }       
+            h1 {
+                margin: 0;
+                padding: 0;
+                width: 448px;
+                height: 600px;
+            }
+        </style>
+	</head>
+
+	<!-- setting the style of the body to overflow:hidden eliminates scrollbars -->
+
+	<body bgcolor= "black" onload="JavaScript:timedRefresh(6000);" style="overflow:hidden">
+		
+
+
+
+<h1><center> <p style="color: #ffffff;  font-size:40px"><strong>NOW SHOWING </strong>
+ <img src="nowWatchingPoster.jpg" border-style =none height="510px" alt="Movie Poster"> 
+<!-- <center> <img src="nowWatchingPoster.jpg" width="448px" alt="Movie Poster"> </center>
+-->
+</center></p></h1>
+</body>
+</html>
